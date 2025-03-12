@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import logo from "../../../public/logo.png";
+import Flipbtn from "./headerbtn";
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,13 +57,13 @@ export default function Header() {
           <Link href="#faq" className="text-white hover:text-yellow-300">
             FAQ
           </Link>
-          <Link
+          {/* <Link
             href="/contact"
             className="bg-teal-500 hover:bg-teal-600 text-white px-5 py-2 rounded-md transition-colors"
           >
             Contact Us
-          </Link>
-         
+          </Link> */}
+         <Flipbtn/>
         </nav>
 
         {/* Mobile Navigation */}
