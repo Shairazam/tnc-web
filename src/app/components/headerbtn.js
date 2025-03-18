@@ -11,7 +11,7 @@ export default function FlipBtn() {
     >
       {/* Background Layer */}
       <div
-        className={`absolute inset-0 bg-blue-500 rounded-md transition-transform duration-500 ${
+        className={`absolute inset-0 bg-teal-500 rounded-md transition-transform duration-500 ${
           isSlid ? "-translate-y-full" : ""
         }`}
       ></div>
@@ -27,7 +27,7 @@ export default function FlipBtn() {
 
       {/* Back Text */}
       <div
-        className={`absolute inset-0 flex items-center justify-center border border-md rounded outline-0 text-white transition-transform duration-500 ${
+        className={`absolute inset-0 flex items-center justify-center border border-md rounded hover:border-teal-500 outline-0 text-white transition-transform duration-500 ${
           isSlid ? "translate-y-0" : "translate-y-full"
         }`}
       >
